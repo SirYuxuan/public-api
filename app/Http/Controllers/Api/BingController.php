@@ -10,7 +10,7 @@ class BingController extends Controller
     /**
      * 获取最新的必应壁纸
      */
-    public function getWallpaper()
+    public function getWallpaper(): void
     {
         $str = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1');
         $str = json_decode($str,true);

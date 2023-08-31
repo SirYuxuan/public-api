@@ -11,7 +11,8 @@ class ImageController extends Controller
     /**
      * 给博客提供的随机图片API
      */
-    #[NoReturn] public function randomBlog(){
+    #[NoReturn] public function randomBlog(): void
+    {
         $img_array = glob("D:\pic\*.{gif,jpg,png}",GLOB_BRACE);
         $img = array_rand($img_array);
         header('Location: https://cdn.yuxuan66.com/yuxuan/blog/img/'.str_replace('D:\pic\\','',$img_array[$img]));
