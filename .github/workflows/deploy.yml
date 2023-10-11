@@ -31,4 +31,5 @@ jobs:
           cd /mnt/project/php/api
           unzip -o data.zip
           rm data.zip
+          composer install
   
