@@ -1,0 +1,16 @@
+# 项目名称
+name: Build&Push
+
+on:
+  # 代码推送到master分支触发
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    # 运行环境
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: zip -r data.zip .
+    - run: ls -l
