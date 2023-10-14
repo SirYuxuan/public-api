@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Api\BingController;
 use App\Http\Controllers\Api\ImageController;
+use App\Http\Controllers\Api\TextController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/images/bing/getWallpaper', [BingController::class, 'getWallpaper']);
 // 提供给雨轩博客，随机显示目录中的照片
 Route::get('/images/randomBlog', [ImageController::class, 'randomBlog']);
+// 获取每日一言
+Route::get('/text/oneDay', [TextController::class,'oneDay']);
