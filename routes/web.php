@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Api\BingController;
 use App\Http\Controllers\Api\ImageController;
-use App\Http\Controllers\Api\TextController;
+use App\Http\Controllers\Api\Text\TextController;
 use Illuminate\Support\Facades\Route;
 
 /*
