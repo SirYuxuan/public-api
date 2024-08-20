@@ -2,7 +2,7 @@
 name: Build&Push
 
 on:
-  #workflow_dispatch:
+  workflow_dispatch:
   # 代码推送到master分支触发
   push:
    branches: [ "master" ]
